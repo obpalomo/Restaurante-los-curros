@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Los Curros</title>
+    <link rel="icon" type="image/x-icon" href="https://restauranteloscurros.es/wp-content/uploads/2018/08/logotipo.png">
+    <link rel="stylesheet" href="../Clase CSS/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo" src="https://restauranteloscurros.es/wp-content/uploads/2018/08/logotipo.png" alt="Restaurante Los Curros">
+        </div>
+        <nav>
+            <a href="">Inicio</a>
+            <a href=""> Servicios </a>
+            <a href="">Horario</a>
+            <a href="">Sohre Nosotros</a>
+            <a href="">Carta</a>
+            <a href="">Galería</a>
+            <a href="">Donde estamos</a>
+        </nav>
+    </header>
+    <main>
+        <div class="welcome">
+            <h1>Bienvenido a Los Curros</h1>
+            <p>El saber comer y beber no es un SECRETO,<br> es un PLACER.</p>
+        </div>      
+        <h1>Comida de calidad y económica para los paladares exquisitos.</h1>
+
+        <table>
+            <thead>
+                <th></th>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="https://restauranteloscurros.es/wp-content/uploads/2018/08/carta.jpg" alt="" width="300">
+                        <br>
+                        <a href="https://restauranteloscurros.es/wp-content/uploads/2019/08/carta-espa%C3%B1ol-los-curros.pdf">
+                        <button type="button">Nuestra Carta</button>
+                        <br>
+                        </a>
+                    </td>
+                    <td>
+                        <img src="https://restauranteloscurros.es/wp-content/uploads/2018/08/reservas.jpg" alt="" width="300">
+                        <br>
+                        <button type="button">Reservar ahora</button>
+                        <br>
+                    </td>
+                    <td>
+                        <img src="https://restauranteloscurros.es/wp-content/uploads/2018/08/galeria.jpg" alt="" width="300">
+                        <br>
+                        <a href="https://restauranteloscurros.es/#galeria">
+                        <button type="button">Galeria</button>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    
+        <h3 id="horario" style="border: 50px rgb(134, 92, 203)">Nuestro horario es de 11:30 a 01:00h.<br><br> El horario de apertura de cocina es de 11:30-16:00h y de 20:00-00:30h.<br><br> Miércoles cerrado. </h3>
+        
+        
+
+    </main>
+    <footer>
+        <h3> VISITA NUESTROS RESTAURANTES</h3>
+        <table>
+            <thead>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Calle Juan Montes Hoyo, 11 <br> 29014 Málaga <br>Telf: 952 65 38 21</p>       
+                    </td> 
+                    <td>
+                        <p>Av. del Mediterráneo, 122<br>29730 Rincón de la Victoria, Málaga<br>Telf: 952 97 03 72</p>    
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Restaurante los curros © 2022 | Todos los derechos reservados | Desarrollado por Oferplay</p>
+    </footer>
+        <section>
+            <form accept="./formulario.html" method="post">
+                <h1 id="formulario"> Formulario </h1>
+                <fieldset>
+                    <legend>Datos básicos</legend>
+                </fieldset>
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Introduce tu nombre" required=""><br>
+                
+                <label for="Apellidos">Apellidos</label>        
+                <input type="text" name="Apellidos" id="Apellidos" placeholder="Introduce tu apellido">  <br>
+
+                <label for="fechanacimiento">Fecha Nacimoiento</label>        
+                <input type="date" name="fecha nacimiento" id="fechanacimiento"><br>
+
+                <label for="lenguaje">Selecciona lenguaje</label>
+                <select name="lenguaje" id="lenguaje">
+                    <option value="español">Español</option>
+                    <option value="ingles">Inglés</option>
+                    <option value="frances">Francés</option>
+                </select><br><br>
+                
+                <fieldset>
+                    <legend>Datos Contacto</legend>
+                </fieldset>
+                <label for="telefono">Teléfono</label>        
+                <input type="tel" name="telefono" id="telefono" required minlength="9" maxlength="9">  <br>
+                
+                <label for="mail">Correo electronico</label>        
+                <input type="mauil" name="mail" id="mail">  <br><br>
+
+                <fieldset>
+                    <legend>Datos Específicos</legend>
+                </fieldset>
+                <label for="gastronomia">Gastronomia favorita</label>
+                <select name="gastronomia" id="gastronomia">
+                    <option value="nacional">Nacional</option>
+                    <option value="internacional">Internacional</option>
+                    <option value="gourmet">Gourmet</option>
+                    <option value="vegetariana">Vegetariana</option>
+                    <option value="vegana">Vegana</option>
+                </select><br><br>
+                <label for="comentarios">¿Qué le gustó de nuestro restaurante?</label><br>
+                <textarea id="comentarios"></textarea><br>
+               
+
+                <p>Califica tu satisfaccion con el Restaurante</p>
+                <label for="muybueno">Muy bueno</label>
+                <input type="radio" id="muybueno" name="satisfaccion" value="Muy bueno">
+                <label for="bueno">Bueno</label>
+                <input type="radio" id="bueno" name="satisfaccion" value="Bueno">
+                <label for="regular">Regular</label>
+                <input type="radio" id="regular" name="satisfaccion" value="Regular">
+                <label for="mal">Mal</label>
+                <input type="radio" id="mal" name="satisfaccion" value="Mal">
+
+                
+                <br><br>
+                <button type="submit">Enviar</style></button>
+            </form>
+        </section>
+    
+</body>
+</html>
